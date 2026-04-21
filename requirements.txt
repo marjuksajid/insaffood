@@ -2,8 +2,10 @@ asgiref
 blinker
 cachelib
 click
+cloudinary
 dj-database-url
 Django
+django-cloudinary-storage
 django-tastypie
 dotenv
 Flask

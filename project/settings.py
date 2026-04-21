@@ -42,8 +42,18 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'cloudinary',
+    'cloudinary_storage',
+
     'shop.apps.ShopConfig',
 ]
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'drgh0e6yh',
+    'API_KEY': '882591187687766',
+    'API_SECRET': '7Ulyq4Bf5phKbpvhiLVCGsX33Mk',
+}
 
 MIDDLEWARE = [
     # 'honeybadger.contrib.DjangoHoneybadgerMiddleware',
@@ -132,7 +142,7 @@ MEDIA_ROOT = BASE_DIR / 'media'
 # Whitenoise static files storage
 STORAGES = {
     "default": {
-        "BACKEND": "django.core.files.storage.FileSystemStorage",
+        "BACKEND": "cloudinary_storage.storage.MediaCloudinaryStorage",
     },
     "staticfiles": {
         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
