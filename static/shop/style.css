@@ -16,7 +16,6 @@
 }
 
 body {
-    width: 1080px;
     margin: 0px auto;
     justify-content: center;
     margin: 0 auto;
@@ -45,7 +44,6 @@ h1 {
 
 
 .header {
-    width: 1080px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -54,8 +52,8 @@ h1 {
 
 
 .logo {
-    width: 100px;
-    height: 50px;
+    width: 164px;
+    height: 60px;
     border-radius: 15px;
 }
 
@@ -537,7 +535,6 @@ h1 {
 }
 /* Footer Styles */
 .site-footer {
-    width: 1080px;
     background: var(--gradient-accent);
     color: white;
     padding: 40px 0px 0;
